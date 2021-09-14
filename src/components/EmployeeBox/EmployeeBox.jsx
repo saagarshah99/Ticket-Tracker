@@ -12,11 +12,11 @@ const EmployeeBox = ({ teamArr }) => {
 
         return (
             <div className="employeeBox">
-                <p>{name}</p>
-                <p>{role}</p>
+                <p>Name: {name}</p>
+                <p>Role: {role}</p>
                 
                 <div className="employeeBox__Counter">
-                    <Counter numberOfTickets={numberOfTickets} />
+                    <Counter numberOfTickets= {numberOfTickets} />
                 </div>
             </div>
         )
