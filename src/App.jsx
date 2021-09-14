@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import team from "./data/team";
+import EmployeeBox from "./components/EmployeeBox/EmployeeBox";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
+
+      <main>
+        <EmployeeBox teamArr={team} />
+      </main>
     </div>
+
+    // tracker --> employee (10) --> names, role, counter
   );
 }
 
