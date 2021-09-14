@@ -5,11 +5,13 @@ import team from "./data/team";
 import TrackerBox from './components/TrackerBox/TrackerBox';
 
 function App() {
+  const sortedTeam = team.sort((a, b) => (b.numberOfTickets > a.numberOfTickets) ? 1 : -1)
+  
   return (
     <div className="App">
         <h1 className="App__header">Tracker App</h1>
         {/* <EmployeeBox teamArr={team} /> */}
-        <TrackerBox teamArr={team} />
+        <TrackerBox teamArr={sortedTeam} />
     </div>
 
     // tracker --> employee (10) --> names, role, counter
