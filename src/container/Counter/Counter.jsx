@@ -14,9 +14,15 @@ const Counter = ({ numberOfTickets }) => {
     }
 
     // "Amazon Superiority Complex Feature"
+    // const handleFirings = event => {
+    //     const getTotalTickets = event.target.value;
+
+    // }
+
 
     return (
         <>
+            <p>Tickets Completed:</p>
             <div className="counter">
                 <button className="counter__button" onClick = {handleDecrement}>-</button>
                 <div className="counter__p">
