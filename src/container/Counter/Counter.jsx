@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import "./Counter.scss"
 
-const Counter = () => {
+const Counter = ({ numberOfTickets }) => {
 
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(numberOfTickets)
     const handleIncrement = () => {
         setCounter(counter + 1);
     }
@@ -13,12 +13,14 @@ const Counter = () => {
         }
     }
 
+    // "Amazon Superiority Complex Feature"
+
     return (
         <>
             <div className="counter">
                 <button className="counter__button" onClick = {handleDecrement}>-</button>
                 <div className="counter__p">
-                    <p >{counter}</p>
+                    <p>{counter}</p>
                 </div>
                 <button className="counter__button" onClick = {handleIncrement}>+</button>
             </div>

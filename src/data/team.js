@@ -5,14 +5,14 @@ const randomNumberOfTickets = () => {
 const team = [
     {
       id: 1,
-      name: "Alima Miller",
-      role: "Junior Software Developer",
+      name: "Wei-Tong Tang",
+      role: "Wizard Developer",
       numberOfTickets: randomNumberOfTickets()
     },
     {
       id: 2,
-      name: "Evelyn Rodgers",
-      role: "Junior Software Developer",
+      name: "Saagar Shah",
+      role: "Junior Wizard Developer",
       numberOfTickets: randomNumberOfTickets()
     },
     {

@@ -1,15 +1,11 @@
 import React from 'react'
 import "./TrackerBox.scss";
 import EmployeeBox from '../EmployeeBox/EmployeeBox';
-import team from "../../data/team"
 
-
-const TrackerBox = () => {
-
-
+const TrackerBox = ({ teamArr }) => {
     return (
         <div className="trackerBox">
-            <EmployeeBox teamArr={team} />
+            <EmployeeBox teamArr={teamArr} />
         </div>
     )
 }

@@ -9,7 +9,7 @@ function App() {
     <div className="App">
         <h1 className="App__header">Tracker App</h1>
         {/* <EmployeeBox teamArr={team} /> */}
-        <TrackerBox/>
+        <TrackerBox teamArr={team} />
     </div>
 
     // tracker --> employee (10) --> names, role, counter

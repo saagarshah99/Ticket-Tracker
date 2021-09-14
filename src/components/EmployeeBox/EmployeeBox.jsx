@@ -4,19 +4,23 @@ import Counter from "../../container/Counter/Counter"
 
 
 const EmployeeBox = ({ teamArr }) => {
-    const teamList = teamArr.map((employee) => {
-        return employee.name;
-    });
+    // const teamList = teamArr.map((employee) => {
+    //     return employee.name;
+    // });
 
-    return (
-        <div className="employeeBox">
+    return teamArr.map(({ name, role, numberOfTickets }) => {
 
-            {teamList}
-            <div className="employeeBox__Counter">
-                <Counter />
+        return (
+            <div className="employeeBox">
+                <p>{name}</p>
+                <p>{role}</p>
+                
+                <div className="employeeBox__Counter">
+                    <Counter numberOfTickets={numberOfTickets} />
+                </div>
             </div>
-        </div>
-    )
+        )
+    });
 }
 
 export default EmployeeBox
