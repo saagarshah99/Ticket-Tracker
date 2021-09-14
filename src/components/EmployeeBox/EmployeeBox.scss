@@ -6,7 +6,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    &__Counter{
-        
+
+    &__status {
+        &-success {color: green;}
+        &-average {color: orange;}
+        &-fail {color: red;}
     }
 }
