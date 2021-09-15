@@ -29,11 +29,11 @@ const Counter = ({ numberOfTickets, teamArr }) => {
         <>
             <p>Tickets Completed:</p>
             <div className="counter">
-                <button className="counter__button" onClick = {handleDecrement ,handleOrder}>-</button>
+                <button className="counter__button" onClick={handleOrder} onClick = {handleDecrement}>-</button>
                 <div className="counter__p">
                     <p>{counter}</p>
                 </div>
-                <button className="counter__button" onClick = {handleIncrement, handleOrder}>+</button>
+                <button className="counter__button"  onClick={handleOrder} onClick = {handleIncrement}>+</button>
             </div>
         </>
     )
