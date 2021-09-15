@@ -29,7 +29,7 @@ const EmployeeBox = ({ teamArr }) => {
                 <p className={statusClass}>{status}</p>
 
                 <div className="employeeBox__Counter">
-                    <Counter numberOfTickets= {numberOfTickets} />
+                    <Counter teamArr={teamArr} numberOfTickets= {numberOfTickets} />
                 </div>
             </div>
         )
