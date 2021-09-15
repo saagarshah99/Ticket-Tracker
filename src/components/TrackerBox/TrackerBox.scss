@@ -4,3 +4,10 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+
+@media screen and (max-width: 992px) {
+    .trackerBox {
+        display: flex;
+        flex-direction: column;
+    }
+}

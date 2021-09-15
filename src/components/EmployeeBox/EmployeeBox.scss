@@ -1,6 +1,5 @@
 .employeeBox{
-    width: 17vw;
-    height: 38vh;
+    margin: 10px;
     border: 1px solid black;
     border-radius: 20px;
     padding: 10px;
@@ -14,9 +13,11 @@
         &-average {color: orange;}
         &-fail {color: red;}
     }
-}
-p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
